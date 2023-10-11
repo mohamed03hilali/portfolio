@@ -62,8 +62,9 @@ body {
     cursor: pointer;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 300;
     z-index: 5;
+    
 }
 
 .nav ul{
@@ -102,40 +103,69 @@ body {
 }
 
 .btn:hover{
-    scale: 105%;
+    scale: 110%;
 }
 
 
-.page-1__body{
+/* Styles CSS précédents restent les mêmes */
+
+.page-1__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px; /* Ajoutez de l'espace pour séparer le contenu des deux colonnes */
+}
+
+.left-column {
+    flex: 1; /* La colonne de gauche prend autant d'espace que possible */
+    /* Vous pouvez ajouter du contenu ou des styles pour la colonne de gauche ici */
+}
+
+.right-column {
+    flex: 2; /* La colonne de droite prend le double d'espace de la colonne de gauche */
     color: #fff;
+    margin-left: 18%;
 }
+
+/* Les styles pour h2, h1, p, social, bubble restent les mêmes */
+
 
 .page-1__body h2{
+    font-family: 'BlockKie' , sans-serif;
     font-size: 30px;
     font-weight: 100;
     letter-spacing: 0.1em;
     margin-bottom: 5px;
 }
+@font-face {
+    font-family: 'BlockKie';
+    src: url('/pixeled/BlockKie.ttf') format('truetype');
+    /* Ajoutez d'autres formats de police si nécessaire */
+  }
 
-.page-1__body h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 4.5rem;
-    font-weight: 900;
+.page-1__body h1 {
+    font-family: 'BlockKie', sans-serif;
+    font-size: 3.5rem;
+    color: #1CD663;
+    font-weight: 600;
     letter-spacing: 0.01em;
     line-height: 4.5vw;
+   
 }
+
 
 .page-1__body p{
     font-size: 18px;
+    font-family: 'BlockKie' , sans-serif;
     font-weight: 300;
     letter-spacing: 0.1em;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10%;
 }
 
 .social{
     display: flex;
-    justify-content: start;
+    justify-content: end;
     gap: 20px;
 }
 
