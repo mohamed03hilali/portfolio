@@ -19,9 +19,9 @@
                         <h1>Mohamed<span>hilali</span></h1>
                     </div>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a id="accueil" href="index.html">Acceuil</a></li>
+                        <li><a id="apropos" href="">A propos</a></li>
+                        <li><a id="contact" href="">Contact</a></li>
                     </ul>
                     <a href="" class="btn">Join us</a>
                 </div>
@@ -41,10 +41,11 @@
             </div>
 
             <div class="social container">
-                <div><i class="fa-brands fa-instagram"></i></div>
-                <div><i class="fa-brands fa-facebook"></i></div>
-                <div><i class="fa-brands fa-twitter"></i></div>
-                <div><i class="fa-brands fa-github"></i></div>
+                <div><a href="https://www.instagram.com/simo_inyourdreams/" target="_blank" ><i  class="fa-brands fa-instagram"></i></a></div>
+                <div><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div><a href="mailto:mohamed03hilali@gmail.com" target="_blank"><i class="fa-brands fa-google"></i></a></div>
+                <div><a href="https://github.com/mohamed03hilali" target="_blank"><i class="fa-brands fa-github"></i></div></a>
+                <div><a href="https://wa.me/+212640883715" target="_blank"><i class="fa-brands fa-whatsapp"></i></div></a>
             </div>
 
             <div class="bubble">
@@ -61,6 +62,28 @@
             </div>
         </div>
     </main>
+    <script>
+        // Récupérer le chemin de la page actuelle
+var path = window.location.pathname;
+
+// Fonction pour définir le lien actif
+function setActiveLink(linkId) {
+    var link = document.getElementById(linkId);
+    if (link) {
+        link.classList.add("active");
+    }
+}
+
+// Identifier la page actuelle et définir le lien actif
+if (path.includes("index.html")) {
+    setActiveLink("accueil");
+} else if (path.includes("about.html")) {
+    setActiveLink("apropos");
+} else if (path.includes("contact.html")) {
+    setActiveLink("contact");
+}
+
+    </script>
 </body>
 
 </html>

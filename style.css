@@ -85,7 +85,18 @@ body {
     letter-spacing: 0.1em;
     font-weight: 700;
     font-family: 'BlockKie',sans-serif;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out ;
+    
+}
+/* Change la couleur lors du survol */
+.nav ul li a:hover {
+    color: #56c581; /* Couleur verte au survol */
+}
+
+/* Change la couleur lors du clic */
+.nav ul li a.active {
+    color: #1CD663; /* Couleur verte lors du clic */
+    text-decoration: none; /* Ajoute une ligne sous le texte */
 }
 
 .nav ul li a:hover{
